@@ -24,5 +24,5 @@ resource "port_integration" "terraform-cloud" {
   # this resolves conflicts in the state caused by indents
   config                = jsonencode(jsondecode(file("${path.module}/terraform_sync_tf.json")))
 
-  depends_on = [ module.latam-chart ]
+  #depends_on = [ module.latam-chart ]
 }
