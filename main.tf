@@ -14,7 +14,7 @@ provider "port" {
 }
 
 
-resource "port_integration" "terraform-cloud" {
+resource "port_integration" "terraform-cloud-2" {
   installation_id       = "terraform-cloud"
   installation_app_type = "terraform-cloud"
   title                 = "Terraform Sync"
