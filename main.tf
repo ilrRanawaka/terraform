@@ -15,8 +15,8 @@ provider "port" {
 
 
 resource "port_integration" "terraform-cloud-2" {
-  installation_id       = "terraform-cloud"
-  installation_app_type = "terraform-cloud"
+  installation_id       = "terraform-cloud-2"
+  installation_app_type = "terraform-cloud-2"
   title                 = "Terraform Sync"
   # version               = "0.1.100"
   # The reason for the jsonencode|jsondecode is
