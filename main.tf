@@ -1,3 +1,19 @@
+terraform {
+  required_providers {
+    port = {
+      source  = "port-labs/port-labs"
+      version = "~> 2.0.3"
+    }
+  }
+}
+
+provider "port" {
+  client_id = "5cBl3X5JBganx8BDvmIO8YHEVlViPU85"     # or set the environment variable PORT_CLIENT_ID
+  secret    = "zMusN9NI1mxgAqgfsjz5FVXnFnexmgcpdE9j8ba8s1bf1OpIGAlSgfsLLIEPJdGC" # or set the environment variable PORT_CLIENT_SECRET
+  base_url  = "https://api.getport.io"
+}
+
+
 resource "port_integration" "terraform-cloud" {
   installation_id       = "terraform-cloud"
   installation_app_type = "terraform-cloud"
