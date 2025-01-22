@@ -1,3 +1,5 @@
+terraform import port_integration.tf_terraform-cloud terraform-cloud
+
 terraform {
   required_providers {
     port = {
