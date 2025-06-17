@@ -15,7 +15,7 @@ provider "port" {
 
 
 resource "port_action" "application_create_it_asset" {
-  identifier = "application_create_it_assettrial"
+  identifier = "application_create_it_assettrial1"
   description = "Creating a new IT asset in the CMDB. If you have any questions about how to do this, please visit the documentation. [How to create an IT Asset in the CMDB?](https://docsrepo.appslatam.com/x/JwR8Fw)"
   icon = "Stack"
   publish = true
